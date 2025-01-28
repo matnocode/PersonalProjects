@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Code Quest</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div
+      style="background-image: url('/assets/bg2.jpg')"
+      id="app"
+      class="bg-gray-200"
+    >
+      <div
+        class="rounded-xl max-w-[1250px] mx-auto border-4 border-pink-500 p-0.5"
+      >
+        <div class="flex bg-pink-500 justify-between px-6 select-none">
+          <div class="py-2">
+            <img
+              class="object-fill w-[200px] h-[70px]"
+              src="/assets/gif2.gif"
+            />
+          </div>
+          <div class="flex items-center gap-10 py-3">
+            <div class="text-3xl text-pink-800 font-medium">
+              <span class="text-pink-200">CODEQUEST</span> - GUEST
+            </div>
+            <div
+              class="text-3xl text-pink-200 font-medium cursor-pointer hover:text-pink-800"
+            >
+              PROFILE
+            </div>
+            <div
+              class="text-3xl text-pink-200 font-medium cursor-pointer hover:text-pink-800"
+            >
+              SETTINGS
+            </div>
+          </div>
+          <div class="py-2">
+            <img
+              class="object-fill w-[200px] h-[70px]"
+              src="/assets/gif3.gif"
+            />
+          </div>
+        </div>
+        <div id="konva-container"></div>
+        <div class="">
+          <img class="object-fill h-[150px] w-full" src="/assets/gif4.gif" />
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

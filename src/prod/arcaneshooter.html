@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="user-select-none" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcane Shooter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" crossorigin src="./assets/index-CbwyxxfF.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BEVqro70.css">
+  </head>
+  <body class="overflow-hidden bg-black">
+    <div>
+      <audio
+        id="bg_audio"
+        src="./assets/playground-CzGwfXuw.mp3"
+        autoplay
+      ></audio>
+      <audio id="audio1"></audio>
+      <audio id="audio2"></audio>
+      <img
+        id="cursor"
+        class="absolute w-[45px] h-[45px] z-50 pointer-events-none user-select-none"
+        src="./assets/aim-CArKxrxY.png"
+        alt="cursor"
+      />
+      <!-- tailwind class loader -->
+      <div class="hue-rotate-180 hue-rotate-90 hue-rotate-45 h-0 w-0"></div>
+    </div>
+    <div class="absolute right-0 mr-[50px] mt-[30px]">
+      <img
+        class="w-[60px] h-[60px] cursor-pointer hover:-rotate-12 hover:scale-110"
+        src="./assets/mute-BKh_RbKe.gif"
+      />
+    </div>
+    <div class="h-screen w-screen absolute -z-10">
+      <img
+        src="./assets/arcanebg4-DqIB3TAs.jpg"
+        class="w-full h-screen object-fill user-select-none pointer-events-none"
+      />
+    </div>
+    <div class="z-50">
+      <div id="stage_champ_select">
+        <div>
+          <img
+            class="absolute left-[35vw] mt-[100px] select-none pointer-events-none"
+            src="./assets/logo-EMZd80Hp.gif"
+          />
+          <img
+            class="absolute left-[32vw] top-[35vh] select-none pointer-events-none w-5/12"
+            src="./assets/logo1-xhozhm5c.png"
+          />
+        </div>
+        <div class="flex gap-[100px] absolute bottom-0 mb-[50px] left-[33vw]">
+          <div
+            class="hover:scale-[120%] transition-all duration-[0.085s] cursor-pointer"
+          >
+            <div class="absolute -translate-y-[150px] translate-x-[150px]">
+              <img
+                class="w-[250px] h-[250px] object-cover select-none !z-[150] pointer-events-none"
+                src="./assets/effect2-BGgALIBd.gif"
+              />
+            </div>
+            <img
+              id="jinx_select"
+              class="w-[300px] h-[300px] object-cover select-none"
+              src="./assets/jinx-BAO8sBn1.gif"
+            />
+          </div>
+
+          <div
+            class="hover:scale-[120%] transition-all duration-[0.085s] cursor-pointer"
+          >
+            <div class="absolute -translate-y-[120px] translate-x-[150px]">
+              <img
+                class="w-[220px] h-[220px] object-cover select-none !z-[150] pointer-events-none"
+                src="./assets/effect3-fKyBeQxC.gif"
+              />
+            </div>
+            <img
+              id="cait_select"
+              class="w-[300px] h-[300px] object-cover select-none"
+              src="./assets/cait-DjsdMW6N.gif"
+            />
+          </div>
+        </div>
+      </div>
+      <div style="display: none" id="stage_how_to_play">
+        <div class="grid w-screen grid-cols-[1fr,2fr] px-[10vw] pt-[13vh]">
+          <div class="w-full h-[70vh] bg-emerald-950 p-10">
+            <div>
+              <img
+                class="absolute w-[200px] -translate-y-[150px] -translate-x-[200px] pointer-events-none"
+                src="./assets/effect2-BGgALIBd.gif"
+              />
+              <img
+                src="https://fontmeme.com/permalink/250106/eaa39789cc9190dc4e06514d3e420b2e.png"
+                alt="arcane-tv-series-font"
+              />
+            </div>
+            <div class="grid grid-rows-[auto-1fr] h-full">
+              <div
+                id="stage_how_to_play_infotext"
+                class="bg-white py-3 px-3 h-fit mt-10 rounded text-black arcane-font text-lg text-pink-700 glitch-effect"
+              >
+                Piltover is waging a war against Zaun! Play as a Zaun's hero
+                against Piltover's Enforcers and reclaim independence from the
+                hands of Piltover's counsil! <br />
+                <span id="stage_how_to_play_charinfo"
+                  >You play as Jinx. Zauns Legend. Criminal Mastermind. Fun
+                  fact: jinx does not use overly designed b*tch mittens that she
+                  didnt even built herself. unlike a certain someone.</span
+                >
+              </div>
+
+              <div class="flex items-end mb-10">
+                <img
+                  class="absolute w-[150px] h-[70px] -rotate-[240deg] -translate-y-[100px] translate-x-[300px] pointer-events-none z-50"
+                  src="./assets/arrow-C2r3S3Vk.gif"
+                />
+                <div
+                  id="stage_how_to_play_nextbutton"
+                  class="w-full h-fit text-center p-2 bg-white text-pink-700 cursor-pointer text-2xl arcane-font glitch-effect hover:rotate-2 hover:scale-105"
+                >
+                  NEXT
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <img
+              class="absolute w-[300px] h-[300px] translate-y-[450px] translate-x-[850px] pointer-events-none"
+              src="./assets/effect4-DTk6bH9Z.gif"
+            />
+            <div class="w-full h-full" id="stage_how_to_play_firstscreen">
+              <img
+                class="w-full h-[70vh] object-cover"
+                src="./assets/jinx_bg-CTkMQWfA.gif"
+              />
+            </div>
+            <div
+              style="display: none"
+              class="w-full h-full flex items-center justify-center"
+              id="stage_how_to_play_secondscreen"
+            >
+              <img
+                class="absolute w-[200px] h-[200px] -translate-y-[220px] translate-x-[0px] pointer-events-none"
+                src="./assets/effect3-fKyBeQxC.gif"
+              />
+              <img
+                class="absolute w-[100px] h-[50px] -translate-y-[110px] -translate-x-[90px] pointer-events-none"
+                src="./assets/effect5-BI2JTW75.gif"
+              />
+              <img
+                class="absolute w-[200px] h-[100px] rotate-12 -translate-y-[220px] -translate-x-[300px] pointer-events-none"
+                src="./assets/arrow-C2r3S3Vk.gif"
+              />
+
+              <img
+                class="w-[500px] h-[500px] mt-[100px] object-cover pointer-events-none user-select-none"
+                src="./assets/enforcer-Bc6nq8dF.gif"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none" id="stage_game">
+        <div
+          class="flex gap-10 text-7xl arcane-font absolute top-[2vh] left-[2vw] pointer-events-none"
+          id="stage_game_scoreboard"
+        >
+          <div class="glitch-effect text-pink-600">
+            STAGE - <span id="stage_game_scoreboard_round">1</span>
+          </div>
+
+          <div
+            id="stage_game_scoreboard_enemy_counter"
+            class="glitch-effect text-pink-600"
+          >
+            [0/10]
+          </div>
+          <div
+            id="stage_game_scoreboard_round_timer"
+            class="glitch-effect text-pink-600 ml-[350px]"
+          ></div>
+        </div>
+        <div
+          class="absolute top-[35vh] w-screen text-[200px] text-pink-700 glitch-effect z-50 arcane-font text-center pointer-events-none"
+          id="stage_game_round_counter"
+        >
+          START
+        </div>
+        <div id="stage_game_enemy_area">
+          <!-- <img
+              class="scale-[60%] object-cover absolute left-[29vw] top-[41vh] user-select-none"
+              src="assets/arcane/enforcer.gif"
+            /> -->
+        </div>
+
+        <div
+          id="stage_game_cleared"
+          style="display: none"
+          class="absolute top-[35vh] w-screen text-[200px] text-pink-700 glitch-effect z-50 arcane-font text-center"
+        >
+          STAGE CLEARED!
+        </div>
+      </div>
+      <div
+        id="stage_game_end"
+        style="display: none"
+        class="absolute top-[35vh] w-screen text-[100px] text-pink-700 glitch-effect z-50 arcane-font text-center"
+      >
+        Thank you for playing this little game!
+        <div onclick="window.location.reload()" class="scale-50 cursor-pointer">
+          START AGAIN?
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
